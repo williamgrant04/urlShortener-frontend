@@ -17,7 +17,8 @@ function App() {
   const inputChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setUrl(e.target.value)
   }
-
+  // TODO: Add validation for url so that it matches the pattern of a valid url before sending it to backend
+  // TODO: (also add validation on backend)
   return (
     <>
       <input type="text" value={url} onChange={inputChangeHandler} />
