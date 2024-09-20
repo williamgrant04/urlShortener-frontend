@@ -17,7 +17,7 @@ const shortenedRedirect = (): React.JSX.Element => {
   return (
     <div>
       <h1>Redirecting to {sourceURL}</h1>
-      <p>This shortened URL has been used {timesUsed} times</p>
+      <p>This shortened URL has been used {timesUsed} time{timesUsed == 1 ? "" : "s"}</p>
     </div>
   )
 }
